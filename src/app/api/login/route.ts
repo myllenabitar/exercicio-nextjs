@@ -1,18 +1,22 @@
 import { cookies } from 'next/headers';
+import { NextRequest } from 'next/server';
 
-export async function GET() {
+export async function POST(request: NextRequest){
+
+    const body = await request.json() as {username:string, password:string};
+
     const response = await fetch(`https://api.origamid.online/conta/login`, {
         method: 'POST', 
         headers: {
                 'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            username: 'dog',
-            password: 'dog'
+            username: body.username,
+            password: body.password
         })
     });
     if(!response.ok) {
-        return Response.json({erro: 'Dados incorretos'}, {status: 401})
+        return Response.json({autorizado:false, erro: 'Dados incorretos'}, {status: 401})
     }
 
     const data = await response.json();
