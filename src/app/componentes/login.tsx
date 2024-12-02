@@ -1,5 +1,4 @@
-
-import { cookies } from "next/headers";
+'use client' 
 
 export default function Login(){
 
@@ -14,7 +13,6 @@ export default function Login(){
             },
             body: JSON.stringify({username, password})
         });
-        (await cookies()).set()
        if(response.ok) window.location.href = "/"; 
     }
    

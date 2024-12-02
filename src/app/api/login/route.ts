@@ -3,12 +3,12 @@ import { NextRequest } from 'next/server';
 
 export async function POST(request: NextRequest){
 
-    const body = await request.json() as {username:string, password:string};
+    const body = (await request.json()) as {username:string, password:string};
 
     const response = await fetch(`https://api.origamid.online/conta/login`, {
-        method: 'POST', 
+        method: "POST", 
         headers: {
-                'Content-Type': 'application/json'
+                'Content-Type' : 'application/json',  
         },
         body: JSON.stringify({
             username: body.username,
@@ -24,5 +24,5 @@ export async function POST(request: NextRequest){
         httpOnly: true,
         secure: true
     })
-    return Response.json(data); 
+    return Response.json({autorizado:true}); 
 }
