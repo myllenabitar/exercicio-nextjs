@@ -7,7 +7,7 @@ Este projeto foi iniciado com [Next.js](https://nextjs.org) utilizando o comando
 ---
 
 ## 🚧 Status do Projeto
-**Em construção** 🚧
+**Concluído!** 
 
 ---
 
@@ -16,10 +16,6 @@ Este projeto foi iniciado com [Next.js](https://nextjs.org) utilizando o comando
 - Consumo de APIs externas utilizando `fetch` e outras ferramentas.
 - Gerenciamento de estados e rendering otimizado.
 - Estilização com CSS e HTML.
-
-<p align="center">
-  <img src="" alt="Demonstração da aplicação">
-</p>
 
 ---
 
@@ -59,23 +55,6 @@ Para acessar e rodar o projeto localmente:
 - **HTML**  
 - **CSS**
 
-Este projeto utiliza [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para otimizar e carregar automaticamente fontes como [Geist](https://vercel.com/font), uma nova família de fontes da Vercel.
-
----
-
-## 📖 Saiba Mais
-Para aprender mais sobre Next.js, confira os seguintes recursos:
-
-- [Documentação do Next.js](https://nextjs.org/docs) - explore as funcionalidades e APIs do Next.js.
-- [Tutorial Interativo do Next.js](https://nextjs.org/learn) - aprenda Next.js com tutoriais práticos e interativos.
-- [Repositório GitHub do Next.js](https://github.com/vercel/next.js) - contribuições e feedback são bem-vindos!
-
----
-
-## 🚀 Deploy na Vercel
-A maneira mais fácil de fazer o deploy da sua aplicação Next.js é utilizando a [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), criada pelos desenvolvedores do Next.js.
-
-Confira a [documentação de deploy do Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para mais detalhes.
 
 ---
 
