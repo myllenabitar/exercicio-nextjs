@@ -3,8 +3,8 @@ import "./globals.css";
 import Menu from "./componentes/menu";
 
 export const metadata: Metadata = {
-  title: "Origamid Next",
-  description: "Criado por Origamid",
+  title: "Exercício com Next.JS",
+  description: "Criado por Myllena Bitar",
 };
 
 export default function RootLayout({
